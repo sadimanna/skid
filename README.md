@@ -1,10 +1,10 @@
 # Self-Supervised Learning for Knee Injury Diagnosis from Magnetic Resonance Data
 
-This code repository contains code in Jupyter Notebook for the above mentioned paper in PyTorch
+This code repository contains code in Jupyter Notebook for the above mentioned paper in TensorFlow and PyTorch
 
-The pretraining_downstream.ipynb file is for training the model on one of the planes and subsequent donwstream classification on MRNet or KneeMRI dataset.
+## TensorFlow
 
-The ensembling.ipynb notebook is for obtaining the final predictions for all the three planes for MRNet dataset only. Since KneeMRI dataset contains only one plane (Sagittal), ensembling is not required when using KneeMRI dataset.
+The original version of SKID was implemented using TensorFlow.
 
 ## Instructions for evaluating the SKID on the MRNet dataset
 
@@ -16,3 +16,9 @@ The ensembling.ipynb notebook is for obtaining the final predictions for all the
 * For downloading the downstream models, go to https://drive.google.com/drive/folders/1DW7_cju-ILrJUU_iL-z_gVPVYqwxakvY?usp=sharing
 * Download the models into respective folders.
 * To evaluate the models on the Validation set, run `python3 evaluate.py /path/to/MRNet-v1.0/ /path/to/models/`
+
+## PyTorch
+
+The pretraining_downstream.ipynb file is for training the model on one of the planes and subsequent donwstream classification on MRNet or KneeMRI dataset.
+
+The ensembling.ipynb notebook is for obtaining the final predictions for all the three planes for MRNet dataset only. Since KneeMRI dataset contains only one plane (Sagittal), ensembling is not required when using KneeMRI dataset.
