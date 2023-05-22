@@ -4,7 +4,7 @@ This code repository contains code in Jupyter Notebook for the above mentioned p
 
 ## TensorFlow
 
-The original version of SKID was implemented using TensorFlow.
+The original version of SKID was implemented using TensorFlow. The Jupyter Notebooks are provided in te folder TF. 
 
 ## Instructions for evaluating the SKID on the MRNet dataset
 
